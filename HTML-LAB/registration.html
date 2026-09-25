@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Student Registration Form</h1>
+<hr>
+<body>
+    <p>
+        <form>
+            <label for="fname">Full Name: </label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="studID">Student ID:(required) </label><br>
+            <input maxlength="15" required type="text" id="studID" name="StudentID"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input minlength="10" type="password" id="password" name="password"><br><br>
+            <label for="bday">Birthday: </label><br>
+            <input type="date" id="bday" name="bday"><br><br>
+            <label for="gender">Gender: </label>
+
+            <select id="gender" name="gender">
+                <option value="male">M</option>
+                <option value="female">F</option>
+                <option value="none">Prefer not to say</option>
+            </select><br><br>
+
+            <label for="program">Program: </label><br>
+            <input type="radio" id="webtech" name="program">
+            <label for="webtech">WebTech</label><br>
+            <input type="radio" id="netsec" name="program">
+            <label for="netsec">NetSec</label><br>
+            <input type="radio" id="ERP" name="program">
+            <label for="ERP">ERP</label><br><br> 
+
+
+
+            <label for="hobbies">Hobbies: </label><br>
+            <input type="text" id="hobbies" name="hobbies"><br><br>
+            <label for="address">Address: </label><br>
+            <input type="text" id="address" name="address"><br><br>
+            
+            <label for=comments>Comments:</label><br>
+            <textarea placeholder="comments..." ="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </p>
+    
+</body>
+</html>
