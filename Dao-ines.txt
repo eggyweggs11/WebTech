@@ -1,0 +1,1584 @@
+commit 751ea85ac10953ad43571429217c162e19fb5b71
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-10-15 01:53:02 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-10-15 01:53:02 +0000
+
+    oct 15 commit
+
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+index daa2a01..64eac09 100644
+--- a/emmet-laboratory/03-navigation.html
++++ b/emmet-laboratory/03-navigation.html
+@@ -7,6 +7,7 @@
+     <title>Navigation</title>
+ </head>
+ <!--Part 6- NUmbering with $-->
++
+ <body>
+     <ul>
+         <li class="item"></li>
+@@ -15,7 +16,7 @@
+         <li class="item"></li>
+         <li class="item"></li>
+     </ul>
+-
++    <!--Part 7 Creating Navigation-->
+     <nav>
+         <ul>
+             <li><a href="">Menu 1</a></li>
+@@ -36,7 +37,7 @@
+         </ul>
+     </nav>
+ 
+-    <!-- HTML Attributes -->
++    <!-- Part 8- HTML Attributes -->
+ 
+     <input type="text" placeholder="Enter your name"><br>
+     <input type="email" placeholder="Enter your email"><br>
+@@ -44,7 +45,7 @@
+     <!-- Image -->
+     <img src="images/blankprofile.png" alt="Profile Photo" height="150" width="150">
+     <a href="https://www.youtube.com">Google</a>
+-    
++
+ </body>
+ 
+ </html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+index 15137d4..9c64619 100644
+--- a/emmet-laboratory/04-form.html
++++ b/emmet-laboratory/04-form.html
+@@ -6,7 +6,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Form</title>
+ </head>
+-
++<!-- Creating a Form-->
+ <body>
+     <h1>Student Registration Form</h1>
+     <hr>
+diff --git a/emmet-laboratory/05-semantic.html b/emmet-laboratory/05-semantic.html
+index d84ee9a..2dd6b6f 100644
+--- a/emmet-laboratory/05-semantic.html
++++ b/emmet-laboratory/05-semantic.html
+@@ -6,7 +6,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Semantics</title>
+ </head>
+-
++<!--Part 10 - Semantic HTML-->
+ <body>
+     <header>
+         <h1>HTML Basics</h1>
+@@ -18,7 +18,8 @@
+                 <li><a href="04-form.html">Form</a></li>
+             </lu>
+         </nav>
+-    </header><hr>
++    </header>
++    <hr>
+     <main>
+         <section>
+             <article>HTML (HyperText Markup Language) is the standard skeleton of any webpage, using codes called tags
+diff --git a/emmet-laboratory/images/Git-Icon-1788C.png b/emmet-laboratory/images/Git-Icon-1788C.png
+new file mode 100644
+index 0000000..45edfe3
+Binary files /dev/null and b/emmet-laboratory/images/Git-Icon-1788C.png differ
+diff --git a/emmet-laboratory/images/HTML5_logo_and_wordmark.svg.webp b/emmet-laboratory/images/HTML5_logo_and_wordmark.svg.webp
+new file mode 100644
+index 0000000..f092090
+Binary files /dev/null and b/emmet-laboratory/images/HTML5_logo_and_wordmark.svg.webp differ
+diff --git a/emmet-laboratory/images/calculator.png b/emmet-laboratory/images/calculator.png
+new file mode 100644
+index 0000000..c5db6de
+Binary files /dev/null and b/emmet-laboratory/images/calculator.png differ
+diff --git a/emmet-laboratory/images/java.png b/emmet-laboratory/images/java.png
+new file mode 100644
+index 0000000..3f15336
+Binary files /dev/null and b/emmet-laboratory/images/java.png differ
+diff --git a/emmet-laboratory/images/mysql-6-logo-png-transparent.png b/emmet-laboratory/images/mysql-6-logo-png-transparent.png
+new file mode 100644
+index 0000000..d96c424
+Binary files /dev/null and b/emmet-laboratory/images/mysql-6-logo-png-transparent.png differ
+diff --git a/emmet-laboratory/images/tictactoe.png b/emmet-laboratory/images/tictactoe.png
+new file mode 100644
+index 0000000..d195187
+Binary files /dev/null and b/emmet-laboratory/images/tictactoe.png differ
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index b7f179e..9bc66c8 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -4,14 +4,15 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Portfolio</title>
++    <title> Personal Portfolio</title>
+ </head>
+ 
+ <body>
+-    <header>
++    <header id="home-section">
+         <h1>My Student Portfolio</h1>
+         <h2>Luke Joshua Dao-ines</h2>
+-        <p>Hi! I am a student passionate about anything related to tech.</p>
++        <p>Hi! I'm an IT student passionate about technology, web development, and creating innovative solutions that
++            make everyday life easier.</p>
+ 
+         <nav>
+             <ul>
+@@ -22,53 +23,152 @@
+                 <li><a href="#contact-section">Contacts</a></li>
+             </ul>
+         </nav>
+-    </header><hr>
++    </header>
++    <hr>
+ 
+     <main>
+         <section id="about-section">
+             <img src="images/blankprofile.png" alt="Profile Pic" width="200" height="200">
+-            <p>My name is Luke Dao-ines, I am a student at the University of the Cordilleras, currently taking Bachelor of Science in Information Technology major in Web Technology.</p>
++            <h3>About Me</h3>
++
++            <p>
++                Hi! I'm Luke Dao-ines, an Information Technology student at the University of the Cordilleras,
++                currently pursuing a Bachelor of Science in Information Technology major in Web Technology.
++
++                <br><br>
++                I have a strong interest in technology and its potential to improve people's everyday lives.
++                I'm particularly fascinated by how websites, applications, and digital solutions can simplify
++                everyday tasks, improve productivity, and enhance the overall quality of life. For me, technology
++                is more than just a collection of tools and systems; it is an opportunity to solve real-world
++                problems, make services more accessible, and create experiences that are more convenient and
++                meaningful for people.
++
++                <br><br>
++                Throughout my studies, I have developed proficiency in Cisco networking and gained an
++                appreciation for the infrastructure and systems that keep people and technologies connected.
++                While networking is one of my strengths, I chose to major in Web Technology because it aligns
++                more closely with my personal passion: using technology to improve the quality of life.
++                I am interested in how well-designed websites and applications can make information easier to
++                access, processes more efficient, and everyday activities less complicated. I want to contribute
++                to creating digital solutions that are not only functional but also useful and valuable to the
++                people who use them.
++
++                <br><br>
++                Outside of academics, I enjoy playing video games, playing darts, and reading books. These
++                hobbies allow me to relax, challenge myself, think strategically, and explore different
++                perspectives. I also enjoy keeping up with advancements in technology, especially those that
++                focus on convenience, efficiency, accessibility, and practical problem-solving.
++
++                <br><br>
++                As I continue my journey in Information Technology, I aim to strengthen my skills in web
++                development, explore new tools and technologies, and gain practical experience by building
++                projects that address real needs. I believe that learning is a continuous process, and I am
++                always willing to experiment with new ideas, learn from challenges, and improve through
++                experience. My goal is to develop my technical abilities while understanding how the solutions
++                I create can make a meaningful difference.
++
++                <br><br>
++                Ultimately, I aspire to become a skilled IT professional who combines technical knowledge,
++                creativity, and problem-solving to build technology that genuinely benefits people. Whether
++                through web development, networking, or other areas of IT, I want my work to go beyond simply
++                making systems function. I want to help make everyday life easier, more efficient, and more
++                accessible through thoughtful and purposeful technology.
++            </p>
++
+         </section>
+ 
+         <section id="skills-section">
+             <h3>My Skills</h3>
+             <ul>
+-                <li>HTML</li>
+-                <li>Java</li>
+-                <li>Git</li>
+-                <li>MySQL</li>
++                <li><img src="images/HTML5_logo_and_wordmark.svg.webp" alt="HTML-logo" width="15"
++                        height="15"><b>HTML</b>
++                    <p>I have a foundational understanding of HTML and its role in structuring and organizing content on
++                        the web. As part of my journey in Web Technology, I am continuously learning how to create
++                        well-structured web pages using appropriate HTML elements, headings, paragraphs, links, images,
++                        and other essential components. I am working toward improving my ability to build accessible,
++                        organized, and user-friendly website structures. Although I am still developing my proficiency
++                        in HTML, I am eager to gain more hands-on experience, explore modern web development practices,
++                        and apply what I learn to create functional and engaging websites.</p>
++                </li>
++                <li><img src="images/java.png" alt="Java-logo" width="15" height="15"><b>Java</b>
++                    <p>Java is my strongest programming language, and I have developed a solid understanding of
++                        programming fundamentals, object-oriented programming, and logical problem-solving. I enjoy
++                        using Java to develop programs and applications, implement algorithms, and find effective
++                        solutions to different programming challenges. Through writing and debugging code, I continue to
++                        strengthen my ability to create structured, readable, and maintainable programs. I am also
++                        interested in expanding my knowledge of software development and exploring more advanced Java
++                        concepts to improve my programming skills and become a more capable developer.</p>
++                </li>
++                <li><img src="images/Git-Icon-1788C.png" alt="git-logo" width="15" height="15"><b>Git</b>
++                    <p>I have knowledge of Git, a version control system used to track changes in code and manage
++                        project development. I understand how repositories and commits help organize development
++                        workflows and maintain project history. I use Git as a tool to support efficient code management
++                        and improve my development practices.</p>
++                </li>
++                <li><img src="images/mysql-6-logo-png-transparent.png" alt="mysql-logo" width="15"
++                        height="15"><b>MySQL</b>
++                    <p>I have experience using MySQL to manage and organize data in relational databases. I am familiar
++                        with the fundamentals of SQL queries and database operations, including retrieving, inserting,
++                        updating, and managing records. I aim to further develop my database management skills and learn
++                        how to build efficient data-driven applications.</p>
++                </li>
++                <li><b>CISCO Networking/Windows Server Administration/COMPTIA+</b>
++                    <p>I'm knowledgeable in Cisco networking and server administration, including network configuration,
++                        troubleshooting, and Windows Server management. I also hold the Cisco CCNA, CompTIA ITF+, and
++                        CompTIA A+ certifications, which have helped me build a solid foundation in networking, computer
++                        hardware, operating systems, and IT support. I'm always looking for opportunities to improve my
++                        skills and apply what I've learned to real-world situations.</p>
++                </li>
+             </ul>
+         </section>
+-        
++
+         <section id="projects-section">
+             <h3>Projects</h3>
+             <div id="tictactoe-card">
+-                <p>This project is a a Tic-Tac-Toe game using Java.</p>
+-                <a href="https://github.com/eggyweggs11/TicTacToe-Game" target="_blank">Tic-Tac-Toe Project</a>
++                <p>Creating this Tic-Tac-Toe game was a challenging but rewarding experience for me, especially since I
++                    was still a beginner in Java programming. There were times when I struggled to understand how to
++                    connect the game logic with the graphical interface, so I relied on YouTube tutorials to guide me
++                    through the process. I learned by following the examples, trying things on my own, and figuring out
++                    what worked. Completing the project gave me a sense of accomplishment and made me realize that I can
++                    build something on my own as long as I'm willing to learn and keep trying, even when things get
++                    difficult.</p>
++                <a href="https://github.com/eggyweggs11/TicTacToe-Game" target="_blank">Tic-Tac-Toe Project</a><br>
++                <img src="images/tictactoe.png" alt="tictatoe-game" width="250" height="300">
+             </div>
+             <div id="calculator-card">
+-                <p>This project is a Calculator made with Java.</p>
+-                <a href="https://github.com/eggyweggs11/Calculator" target="_blank">Calculator Project</a>
++                <p>I developed a calculator application using Java GUI that allows users to perform basic arithmetic
++                    operations, including addition, subtraction, multiplication, and division. The application uses
++                    clickable buttons for entering numbers and selecting operations, with a display to show the input
++                    and results. Through this project, I gained hands-on experience with GUI components, button event
++                    handling, and implementing calculation logic in Java. It also helped me understand how to make a
++                    program more interactive and user-friendly.</p>
++                <a href="https://github.com/eggyweggs11/Calculator" target="_blank">Calculator Project</a><br>
++                <img src="images/calculator.png" alt="calculator.png" width="250" height="300">
+             </div>
+             <div id="html-card">
+-                <p>This is a compilation of my journey through HTML.</p>
++                <p>I'm currently learning HTML and building my understanding of how websites are structured. As I
++                    explore different HTML elements, I'm learning how to organize content using headings, paragraphs,
++                    links, images, and lists. Since I'm still a beginner, I use practice exercises to experiment with
++                    what I've learned and improve my skills step by step. This journey is helping me build a strong
++                    foundation in web development and prepare for more advanced projects in the future.</p>
+                 <a href="https://github.com/eggyweggs11/WebTech" target="_blank">HTML Project</a>
+             </div>
+         </section>
+ 
+         <section id="contact-section">
+             <h3>Contact Me</h3>
+-            <form >
++            <form>
+                 <label for="fullname">Name: </label>
+                 <input type="text" name="fullname" id="fullname" placeholder="Enter your name"><br><br>
+-                
++
+                 <label for="email">Email: </label>
+                 <input type="email" name="email" id="email" placeholder="Enter your Email"><br><br>
+ 
+                 <label for="subject">Subject: </label><br>
+                 <textarea name="subject" id="subject" placeholder="enter subject..."></textarea><br><br>
+ 
+-                <button type="submit">Submit</button>
++                <button type="submit">Submit </button>
++                <a href="#home-section">back-to-top</a>
+ 
+             </form>
+         </section>
+@@ -76,7 +176,7 @@
+             <p>&copy 2026 - Luke Joshua Dao-ines</p>
+         </footer>
+ 
+-        
++
+     </main>
+ </body>
+ 
+
+commit 9a7d928ef2275de631e09f1f96d0bfb14c3f5653
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-10-09 01:49:34 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-10-09 01:49:34 +0000
+
+    Oct 09 commit
+
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+index 5404a85..af298f1 100644
+--- a/HTML-LAB/registration.html
++++ b/HTML-LAB/registration.html
+@@ -44,7 +44,7 @@
+             <input type="text" id="address" name="address"><br><br>
+             
+             <label for=comments>Comments:</label><br>
+-            <textarea placeholder="comments..." ="comments" name="comments" rows="4" cols="30"></textarea><br><br>
++            <textarea placeholder="comments..." name="comments" rows="4" cols="30"></textarea><br><br>
+ 
+             <button type="submit">Submit</button>
+             <button type="reset">Reset</button>
+diff --git a/emmet-laboratory/01-basic.html b/emmet-laboratory/01-basic.html
+index 438193a..630b2c4 100644
+--- a/emmet-laboratory/01-basic.html
++++ b/emmet-laboratory/01-basic.html
+@@ -4,11 +4,11 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>01-basics</title>
+ </head>
+ 
+ <body>
+-
++    <!--Part 2- Basic Emmet Shortcuts-->
+     <header>
+         <h1></h1>
+         <nav></nav>
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+index 2371a3d..7b2d31f 100644
+--- a/emmet-laboratory/02-classes-ids.html
++++ b/emmet-laboratory/02-classes-ids.html
+@@ -8,6 +8,7 @@
+ </head>
+ 
+ <body>
++    <!--Part 3- Classes and IDs-->
+     <p class="introduction"></p>
+     <div id="container"></div>
+     <div class="card featured"></div>
+@@ -18,7 +19,7 @@
+     <main class="content"></main>
+     <section id="about"></section>
+     <footer class="site-footer"></footer>
+-
++    <!--Part 4- Child and Sibling Operators-->
+     <!-- child operator -->
+     <ul>
+         <li></li>
+@@ -66,8 +67,8 @@
+     <p></p>
+     <p></p>
+ 
+-    <!-- Adding Text with {} -->
+-    
++    <!-- Part 5-Adding Text with {} -->
++
+     <h1>Web Technologies</h1>
+     <p>Welcome to my webpage.</p>
+ 
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+index eaa6d5d..daa2a01 100644
+--- a/emmet-laboratory/03-navigation.html
++++ b/emmet-laboratory/03-navigation.html
+@@ -6,7 +6,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Navigation</title>
+ </head>
+-
++<!--Part 6- NUmbering with $-->
+ <body>
+     <ul>
+         <li class="item"></li>
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index c7ee151..b7f179e 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -40,6 +40,43 @@
+             </ul>
+         </section>
+         
++        <section id="projects-section">
++            <h3>Projects</h3>
++            <div id="tictactoe-card">
++                <p>This project is a a Tic-Tac-Toe game using Java.</p>
++                <a href="https://github.com/eggyweggs11/TicTacToe-Game" target="_blank">Tic-Tac-Toe Project</a>
++            </div>
++            <div id="calculator-card">
++                <p>This project is a Calculator made with Java.</p>
++                <a href="https://github.com/eggyweggs11/Calculator" target="_blank">Calculator Project</a>
++            </div>
++            <div id="html-card">
++                <p>This is a compilation of my journey through HTML.</p>
++                <a href="https://github.com/eggyweggs11/WebTech" target="_blank">HTML Project</a>
++            </div>
++        </section>
++
++        <section id="contact-section">
++            <h3>Contact Me</h3>
++            <form >
++                <label for="fullname">Name: </label>
++                <input type="text" name="fullname" id="fullname" placeholder="Enter your name"><br><br>
++                
++                <label for="email">Email: </label>
++                <input type="email" name="email" id="email" placeholder="Enter your Email"><br><br>
++
++                <label for="subject">Subject: </label><br>
++                <textarea name="subject" id="subject" placeholder="enter subject..."></textarea><br><br>
++
++                <button type="submit">Submit</button>
++
++            </form>
++        </section>
++        <footer>
++            <p>&copy 2026 - Luke Joshua Dao-ines</p>
++        </footer>
++
++        
+     </main>
+ </body>
+ 
+
+commit 49ded387e6a912c45e5a4cf3c62a1bf221891186
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-10-07 01:56:43 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-10-07 01:56:43 +0000
+
+    October 7
+
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+index 12ec0a3..eaa6d5d 100644
+--- a/emmet-laboratory/03-navigation.html
++++ b/emmet-laboratory/03-navigation.html
+@@ -38,11 +38,12 @@
+ 
+     <!-- HTML Attributes -->
+ 
+-    <input type="text" placeholder="Enter your name">
+-    <input type="email" placeholder="Enter your email">
++    <input type="text" placeholder="Enter your name"><br>
++    <input type="email" placeholder="Enter your email"><br>
+ 
+     <!-- Image -->
+-
++    <img src="images/blankprofile.png" alt="Profile Photo" height="150" width="150">
++    <a href="https://www.youtube.com">Google</a>
+     
+ </body>
+ 
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+new file mode 100644
+index 0000000..15137d4
+--- /dev/null
++++ b/emmet-laboratory/04-form.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Form</title>
++</head>
++
++<body>
++    <h1>Student Registration Form</h1>
++    <hr>
++    <p>
++    <form>
++        <label for="studID">Student ID:</label><br>
++        <input type="text" name="studID" id="studID" placeholder="Enter your Student ID"><br><br>
++
++        <label for="fname">Full Name:</label><br>
++        <input type="text" name="fname" id="fname" placeholder="Enter full name"><br><br>
++
++        <label for="email">Email:</label><br>
++        <input type="email" name="email" id="email" placeholder="Enter valid email"><br><br>
++
++        <label for="password">Password:</label><br>
++        <input type="password" name="password" id="password" placeholder="Enter password"><br><br>
++
++        <label for="gender">Gender:</label><br>
++
++        <input type="radio" name="gender" id="male">
++        <label for="male">Male</label><br>
++        <input type="radio" name="gender" id="female">
++        <label for="female">Female</label><br>
++        <input type="radio" name="gender" id="noPref">
++        <label for="noPref">Prefer not to say</label><br><br>
++
++        <label for="course">Course:</label><br>
++        <input type="text" name="course" id="course" placeholder="Enter course"><br><br>
++
++        <label for="hobbies">Hobbies:</label><br>
++        <input type="text" name="hobbies" id="hobbies" placeholder="Enter hobbies"><br><br>
++
++        <label for="address">Address:</label><br>
++        <input type="text" name="address" id="address" placeholder="Enter address"><br><br>
++
++        <button type="submit">Submit</button>
++
++    </form>
++    </p>
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/05-semantic.html b/emmet-laboratory/05-semantic.html
+new file mode 100644
+index 0000000..d84ee9a
+--- /dev/null
++++ b/emmet-laboratory/05-semantic.html
+@@ -0,0 +1,38 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Semantics</title>
++</head>
++
++<body>
++    <header>
++        <h1>HTML Basics</h1>
++        <nav>
++            <lu>
++                <li><a href="index.html">Home</a></li>
++                <li><a href="01-basic.html">Basics</a></li>
++                <li><a href="03-navigation.html">Navigation</a></li>
++                <li><a href="04-form.html">Form</a></li>
++            </lu>
++        </nav>
++    </header><hr>
++    <main>
++        <section>
++            <article>HTML (HyperText Markup Language) is the standard skeleton of any webpage, using codes called tags
++                to structure content for web browsers. A basic page is split into a invisible &lt;head&gt; for metadata
++                and a visible &lt;body&gt; for content. Inside the body, you use tags like &lt;h1&gt; for headings,
++                &lt;p&gt; for paragraphs, and &lt;a&gt; for links to organize text and multimedia. While HTML defines
++                the structure, it pairs with CSS for styling and JavaScript for interactivity to create complete
++                websites.
++            </article>
++        </section>
++        <footer>
++            <p>Author: Luke Dao-ines | CITCS 2026</p>
++        </footer>
++    </main>
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/images/blankprofile.png b/emmet-laboratory/images/blankprofile.png
+new file mode 100644
+index 0000000..a54c9b7
+Binary files /dev/null and b/emmet-laboratory/images/blankprofile.png differ
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+index e69de29..256e7d8 100644
+--- a/emmet-laboratory/index.html
++++ b/emmet-laboratory/index.html
+@@ -0,0 +1,31 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Index</title>
++</head>
++
++<body>
++    <!-- Part11 - Complex Emmet Abbreviation -->
++    <!-- div.container>header>h1{My Portfolio} +p{Web Developer}+nav>ul>li*4>a{Menu $} -->
++
++    <div class="container">
++        <header>
++            <h1>My Portfolio</h1>
++            <p>Web Developer</p>
++            <nav>
++                <ul>
++                    <li><a href="">Menu 1</a></li>
++                    <li><a href="">Menu 2</a></li>
++                    <li><a href="">Menu 3</a></li>
++                    <li><a href="">Menu 4</a></li>
++                </ul>
++            </nav>
++        </header>
++    </div>
++
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+new file mode 100644
+index 0000000..c7ee151
+--- /dev/null
++++ b/emmet-laboratory/portfolio.html
+@@ -0,0 +1,46 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Portfolio</title>
++</head>
++
++<body>
++    <header>
++        <h1>My Student Portfolio</h1>
++        <h2>Luke Joshua Dao-ines</h2>
++        <p>Hi! I am a student passionate about anything related to tech.</p>
++
++        <nav>
++            <ul>
++                <li><a href="#home-section">Home</a></li>
++                <li><a href="#about-section">About</a></li>
++                <li><a href="#skills-section">Skills</a></li>
++                <li><a href="#projects-section">Projects</a></li>
++                <li><a href="#contact-section">Contacts</a></li>
++            </ul>
++        </nav>
++    </header><hr>
++
++    <main>
++        <section id="about-section">
++            <img src="images/blankprofile.png" alt="Profile Pic" width="200" height="200">
++            <p>My name is Luke Dao-ines, I am a student at the University of the Cordilleras, currently taking Bachelor of Science in Information Technology major in Web Technology.</p>
++        </section>
++
++        <section id="skills-section">
++            <h3>My Skills</h3>
++            <ul>
++                <li>HTML</li>
++                <li>Java</li>
++                <li>Git</li>
++                <li>MySQL</li>
++            </ul>
++        </section>
++        
++    </main>
++</body>
++
++</html>
+\ No newline at end of file
+
+commit 647942e986a76f61ad4be2db14875786c7be7ab5
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-10-05 01:48:25 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-10-05 01:48:25 +0000
+
+    October 5
+
+diff --git a/HTML-LAB/multimedia.html b/HTML-LAB/multimedia.html
+index 7fb8baa..83bacc9 100644
+--- a/HTML-LAB/multimedia.html
++++ b/HTML-LAB/multimedia.html
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>Multimedia</title>
+ </head>
+ <body>
+     <header> <h1>Educational Content</h1></header><hr>
+diff --git a/emmet-laboratory/01-basic.html b/emmet-laboratory/01-basic.html
+new file mode 100644
+index 0000000..438193a
+--- /dev/null
++++ b/emmet-laboratory/01-basic.html
+@@ -0,0 +1,28 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++
++<body>
++
++    <header>
++        <h1></h1>
++        <nav></nav>
++    </header>
++
++    <main>
++        <div>
++            <p></p>
++            <p></p>
++            <p></p>
++        </div>
++    </main>
++    <footer></footer>
++
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+new file mode 100644
+index 0000000..2371a3d
+--- /dev/null
++++ b/emmet-laboratory/02-classes-ids.html
+@@ -0,0 +1,78 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++
++<body>
++    <p class="introduction"></p>
++    <div id="container"></div>
++    <div class="card featured"></div>
++    <section id="about" class="content-section"></section>
++
++    <header class="site-header"></header>
++    <nav id="main" class="nav"></nav>
++    <main class="content"></main>
++    <section id="about"></section>
++    <footer class="site-footer"></footer>
++
++    <!-- child operator -->
++    <ul>
++        <li></li>
++    </ul>
++
++    <nav>
++        <ul>
++            <li></li>
++        </ul>
++    </nav>
++
++    <nav>
++        <ul>
++            <li></li>
++            <li></li>
++            <li></li>
++            <li></li>
++            <li></li>
++        </ul>
++    </nav>
++
++    <!-- sibling operator -->
++    <h1></h1>
++    <p></p>
++
++    <h1></h1>
++    <h2></h2>
++    <p></p>
++    <p></p>
++
++    <!-- multiplication operator -->
++    <li></li>
++    <li></li>
++    <li></li>
++    <li></li>
++    <li></li>
++
++    <div></div>
++    <div></div>
++    <div></div>
++
++    <p></p>
++    <p></p>
++    <p></p>
++    <p></p>
++    <p></p>
++
++    <!-- Adding Text with {} -->
++    
++    <h1>Web Technologies</h1>
++    <p>Welcome to my webpage.</p>
++
++    <h1>My Web Development Journey</h1>
++    <p>I am learning HTML, CSS, JavaScript, and web developmen</p>
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+new file mode 100644
+index 0000000..12ec0a3
+--- /dev/null
++++ b/emmet-laboratory/03-navigation.html
+@@ -0,0 +1,49 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Navigation</title>
++</head>
++
++<body>
++    <ul>
++        <li class="item"></li>
++        <li class="item"></li>
++        <li class="item"></li>
++        <li class="item"></li>
++        <li class="item"></li>
++    </ul>
++
++    <nav>
++        <ul>
++            <li><a href="">Menu 1</a></li>
++            <li><a href="">Menu 2</a></li>
++            <li><a href="">Menu 3</a></li>
++            <li><a href="">Menu 4</a></li>
++            <li><a href="">Menu 5</a></li>
++        </ul>
++    </nav>
++
++    <nav>
++        <ul>
++            <li><a href="#home">Home</a></li>
++            <li><a href="#about">About</a></li>
++            <li><a href="#portfolio">Portfolio</a></li>
++            <li><a href="#servies">Services</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
++    </nav>
++
++    <!-- HTML Attributes -->
++
++    <input type="text" placeholder="Enter your name">
++    <input type="email" placeholder="Enter your email">
++
++    <!-- Image -->
++
++    
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+new file mode 100644
+index 0000000..e69de29
+
+commit 34e753ba8eb536f3ca17ddbf923e561c55e56f18
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-09-30 01:21:04 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-09-30 01:21:04 +0000
+
+    September 30
+
+diff --git a/MY-PORTFOLIO/about.html b/MY-PORTFOLIO/about.html
+new file mode 100644
+index 0000000..554d6b5
+--- /dev/null
++++ b/MY-PORTFOLIO/about.html
+@@ -0,0 +1,33 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>About</title>
++</head>
++
++<body>
++    <header>
++        <h1>ABOUT</h1>
++    </header>
++    <hr>
++
++    <p>
++        I am a 2nd year student at UC, studying IT - major in Web Tech<br>
++
++        <ul>Educational Background
++            <ul>Tertiary
++                <li>University of the Cordilleras/li>
++                <li>NetCom Riyadh</li>
++            </ul>
++            <ul>Secondary
++                <li></li>
++            </ul>
++        </ul>
++
++    </p>
++
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/MY-PORTFOLIO/contact.html b/MY-PORTFOLIO/contact.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/MY-PORTFOLIO/images/monke.jpg b/MY-PORTFOLIO/images/monke.jpg
+new file mode 100644
+index 0000000..5486be6
+Binary files /dev/null and b/MY-PORTFOLIO/images/monke.jpg differ
+diff --git a/MY-PORTFOLIO/index.html b/MY-PORTFOLIO/index.html
+new file mode 100644
+index 0000000..e138d8a
+--- /dev/null
++++ b/MY-PORTFOLIO/index.html
+@@ -0,0 +1,35 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Home</title>
++</head>
++
++<body>
++    <header>
++        <h1> Luke.web</h1>
++        <hr>
++        <nav>
++            <a href="index.html"><strong>HOME</strong></a> |
++            <a href="about.html"><strong>ABOUT</strong></a> |
++            <a href="skills.html"><strong>SKILLS</strong></a>
++        </nav>
++        <hr>
++    </header>
++
++    <h2>Luke Dao-ines' Profile</h2>
++    <img src="images/monke.jpg" alt="luke's profile pic" width="150" height="150">
++
++    <p>
++        My name is a Luke Joshua Dao-ines, <br>a BSIT student at the University of the Cordilleras, majoring in Web
++        Tech.
++
++        <br><br>
++        <strong>Welcome to my personal page.</strong>
++    </p>
++
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/MY-PORTFOLIO/skills.html b/MY-PORTFOLIO/skills.html
+new file mode 100644
+index 0000000..e69de29
+
+commit 22016ad8e0efd761d647e0460969a4d767512562
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-09-28 01:48:55 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-09-28 01:48:55 +0000
+
+    September 28
+
+diff --git a/HTML-LAB/audio/drums9s.mp3 b/HTML-LAB/audio/drums9s.mp3
+new file mode 100644
+index 0000000..59594c7
+Binary files /dev/null and b/HTML-LAB/audio/drums9s.mp3 differ
+diff --git a/HTML-LAB/multimedia.html b/HTML-LAB/multimedia.html
+index e69de29..7fb8baa 100644
+--- a/HTML-LAB/multimedia.html
++++ b/HTML-LAB/multimedia.html
+@@ -0,0 +1,35 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++    <header> <h1>Educational Content</h1></header><hr>
++    <img src="images/monke.jpg" alt="AI generated image of a monkey" height="150" width="150">
++
++    <p>
++        Drums: <br>
++        <audio controls>
++            <source src="audio/drums9s.mp3" type="audio/mp3">
++        </audio><br><br>
++
++        Skeletal System<br>
++        <video width="640" height="360" controls>
++            <source src="videos/Skeleton.mp4" type="video/mp4">
++
++        </video><br>
++
++        <iframe 
++        width="560" 
++        height="315" 
++        src="https://www.youtube.com/embed/SiBzCpg6vu8?si=XNHA31n-Qjf4U1Ft" 
++        title="YouTube video player" 
++        frameborder="0" 
++        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
++        referrerpolicy="strict-origin-when-cross-origin" 
++        allowfullscreen></iframe>
++    </p>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/semantic.html b/HTML-LAB/semantic.html
+index 6b79ada..b1d2fee 100644
+--- a/HTML-LAB/semantic.html
++++ b/HTML-LAB/semantic.html
+@@ -4,7 +4,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>Semantics</title>
+ </head>
+ 
+ <body>
+diff --git a/HTML-LAB/videos/Skeleton.mp4 b/HTML-LAB/videos/Skeleton.mp4
+new file mode 100644
+index 0000000..2ee6c62
+Binary files /dev/null and b/HTML-LAB/videos/Skeleton.mp4 differ
+
+commit e12344aa425a7be58530f072da149a7cf6addcbd
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-09-25 02:02:24 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-09-25 02:02:24 +0000
+
+    update html files
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+index 0fe72b2..8abbaed 100644
+--- a/HTML-LAB/about.html
++++ b/HTML-LAB/about.html
+@@ -9,7 +9,8 @@
+ <h3>
+     <a href="index.html">HOME</a> |
+     <a href="about.html">ABOUT</a> |
+-    <a href="contact.html">CONTACT</a>
++    <a href="contact.html">CONTACT</a> |
++    <a href="semantic.html">WebDev</a>
+ </h3>
+ <hr>
+ <body>
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+index 7b0deab..dc7ad44 100644
+--- a/HTML-LAB/links.html
++++ b/HTML-LAB/links.html
+@@ -20,9 +20,9 @@
+ <body>
+ 
+     <p>
+-    <a href="google.com">Google</a><br>
+-    <a href="youtube.com">Youtube</a><br>
+-    <a href="www.uc-bcf.edu.ph/">UC</a>
++    <a href="https://google.com" target="_blank">Google</a><br>
++    <a href="https://youtube.com" target="_blank">Youtube</a><br>
++    <a href="https://www.uc-bcf.edu.ph/" target="_blank">UC</a>
+ 
+ 
+     </p>
+diff --git a/HTML-LAB/multimedia.html b/HTML-LAB/multimedia.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+new file mode 100644
+index 0000000..5404a85
+--- /dev/null
++++ b/HTML-LAB/registration.html
+@@ -0,0 +1,55 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<h1>Student Registration Form</h1>
++<hr>
++<body>
++    <p>
++        <form>
++            <label for="fname">Full Name: </label><br>
++            <input type="text" id="fname" name="fname"><br><br>
++            <label for="studID">Student ID:(required) </label><br>
++            <input maxlength="15" required type="text" id="studID" name="StudentID"><br><br>
++            <label for="email">Email:</label><br>
++            <input type="email" id="email" name="email"><br><br>
++            <label for="password">Password:</label><br>
++            <input minlength="10" type="password" id="password" name="password"><br><br>
++            <label for="bday">Birthday: </label><br>
++            <input type="date" id="bday" name="bday"><br><br>
++            <label for="gender">Gender: </label>
++
++            <select id="gender" name="gender">
++                <option value="male">M</option>
++                <option value="female">F</option>
++                <option value="none">Prefer not to say</option>
++            </select><br><br>
++
++            <label for="program">Program: </label><br>
++            <input type="radio" id="webtech" name="program">
++            <label for="webtech">WebTech</label><br>
++            <input type="radio" id="netsec" name="program">
++            <label for="netsec">NetSec</label><br>
++            <input type="radio" id="ERP" name="program">
++            <label for="ERP">ERP</label><br><br> 
++
++
++
++            <label for="hobbies">Hobbies: </label><br>
++            <input type="text" id="hobbies" name="hobbies"><br><br>
++            <label for="address">Address: </label><br>
++            <input type="text" id="address" name="address"><br><br>
++            
++            <label for=comments>Comments:</label><br>
++            <textarea placeholder="comments..." ="comments" name="comments" rows="4" cols="30"></textarea><br><br>
++
++            <button type="submit">Submit</button>
++            <button type="reset">Reset</button>
++        </form>
++    </p>
++    
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index 621459b..a709902 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -6,20 +6,40 @@
+     <title>HTML Tables</title>
+ </head>
+ <body>
+-    <table>
++    <table border="1">
+         <tr>
+-            <th>Day</th>
+-            <th>Time</th>
+-            <th>Subject</th>
++            <th colspan="2">Day</th>
++            <th colspan ="2">Time</th>
++            <th colspan = "2">Subject</th>
+             <th>Room</th>
+-            <th>Instructor</th>
++            <th >Instructor</th>
+         </tr>
+         <tr>
+-            <td>Monday</td>
+-            <td>8:50 AM</td>
+-            <td>Web Development</td>
+-            <td>m307</td>
++            <td colspan="2" rowspan="4">Monday</td>
++            <td colspan ="2">7:30 - 850</td>
++            <td colspan ="2">Accounting Essentials</td>
++            <td>U705</td>
++            <td>Luis Meing</td>
+         </tr>
++        <tr>
++            <td colspan ="2">8:50 - 10:10</td>
++            <td colspan ="2">Web Technologies</td>
++            <td >M307</td>
++            <td>Leonard Prim Francis Reyes</td>
++        </tr>
++        <tr>
++            <td colspan ="2">10:10 - 11:30</td>
++            <td colspan ="2">Web Technologies</td>
++            <td >FLD</td>
++            <td>Leonard Prim Francis Reyes</td>
++        </tr>
++        <tr>
++            <td colspan ="2">11:30 - 12:50</td>
++            <td colspan ="2">Information Management</td>
++            <td >U705</td>
++            <td>Joshua Carbie Almarez</td>
++        </tr>
++        
+     </table>
+     
+ </body>
+diff --git a/HTML-LAB/semantic.html b/HTML-LAB/semantic.html
+new file mode 100644
+index 0000000..6b79ada
+--- /dev/null
++++ b/HTML-LAB/semantic.html
+@@ -0,0 +1,45 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++
++<body>
++    <header>
++        <h1>Web Development</h1>
++        <hr>
++        <nav>
++            <a href="#home">HOME</a> |
++            <a href="#about">ABOUT</a> |
++        </nav>
++        <hr>
++    </header>
++    <main>
++        <section>
++            <h1>Introduction to Web Development</h1>
++            <p>
++                Web development is the process of creating, building, and maintaining websites and web applications that run over the internet. It ranges from creating a simple text-only webpage to developing complex social network applications, e-commerce stores, and online tools.
++            </p>
++    </section>
++        <section>
++            <article>
++               <h2>The Importance of Web Development Skills</h2>
++               <p>
++                In today’s hyper-connected world, web development has transformed from a specialized technical craft into the absolute backbone of the global digital economy. Whether you are an entrepreneur launching a startup, a creative showcasing a portfolio, or a professional aiming to stay competitive, understanding how the web is built offers an unmatched strategic advantage.</p>
++            </article>
++
++            <aside>
++                <h4>World's First Website</h4>
++                <p>The world's first website, <i>info.cern.ch</i>, went live on <strong>August 6, 1991</strong>. It was created by British scientist Sir Tim Berners-Lee at the CERN research institute in Switzerland using a NeXT computer.</p>
++            </aside>
++        </section>
++    </main>
++    <footer>
++        <p>Author: Luke | <a href="about.html">About Author</a> </p>
++    </footer>
++</body>
++
++</html>
+\ No newline at end of file
+
+commit 09d184c38a3cef7e49acd9e63901d6a05becae7d
+Author:     Luke Joshua BD <lukedaoines9@gmail.com>
+AuthorDate: 2026-09-22 11:43:46 +0000
+Commit:     Luke Joshua BD <lukedaoines9@gmail.com>
+CommitDate: 2026-09-22 11:43:46 +0000
+
+    First Commit
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+new file mode 100644
+index 0000000..0fe72b2
+--- /dev/null
++++ b/HTML-LAB/about.html
+@@ -0,0 +1,20 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head><h1>ABOUT ME</h1>
++<hr>
++<h3>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++</h3>
++<hr>
++<body>
++    <p>
++        I am a web tech student at the University of the Cordilleras.
++    </p>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/contact.html b/HTML-LAB/contact.html
+new file mode 100644
+index 0000000..fdad1ca
+--- /dev/null
++++ b/HTML-LAB/contact.html
+@@ -0,0 +1,23 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head><h1>Contact Information</h1><hr>
++<h3>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++</h3><hr>
++<body>
++    <p>
++        <ul>
++            <li>Phone: 0999999999</li>
++            <li>Email: lllll@gmail.com</li>
++            <li>Tel: (074)999999</li>
++        </ul>
++    </p>
++    
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+new file mode 100644
+index 0000000..64c4c3c
+--- /dev/null
++++ b/HTML-LAB/formatting.html
+@@ -0,0 +1,58 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>
++        formatting example
++    </title>
++</head>
++<h1>
++    HTML TEXT FORMATTING
++    <hr>
++</h1>
++<body>
++    <p>
++        <strong> &lt;br&gt;</strong>
++        <em> bolds text for visual emphasis without implying extra importance</em>
++        <br>
++        <strong> &lt;strong&gt;</strong>
++        <em> bolds text and indicates extra importance</em>
++        <br> 
++        <strong>&lt;i&gt;</strong>
++        <em> italicizes text to offset it for alternative voice,mood or technical terms</em>
++        <br>
++        <strong>&lt;em&gt;</strong>
++        <em> italicizes text to add emphatic stress to change the sentence's meaing</em>
++        <br>
++        <strong>&lt;u&gt;</strong>
++        <em> underlines text</em>
++        <br>
++        <strong>&lt;mark&gt;</strong>
++        <em> <mark>highlights text with a yellow background</mark></em>
++        <br>
++        <strong>&lt;small&gt;</strong>
++        <em><small> reduces text size</small></em>
++        <br>
++        <strong>&lt;del&gt;</strong>
++        <em><del> displays text with a strikethrough to mark deleted/removed content</del></em>
++        <br>
++        <strong>&lt;ins&gt;</strong>
++        <em><ins> underlines text to mark newly inserted content</ins></em>
++        <br>
++        <strong>&lt;sub&gt;</strong>
++        <em> renders text as a subscript lower than the main baseline</em>
++        <br>
++            <i style="margin-left: 40px;">For example:</i>
++            H<sub>2</sub>O
++        <br>
++        <strong>&lt;sup&gt;</strong>
++        <em> renders text as a superscript higher than the main baseline</em>
++        <br>
++            <i style="margin-left: 40px;">For example:</i>
++            E = mc<sup>2</sup>
++        <br>
++    </p>
++    
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+new file mode 100644
+index 0000000..f27f8ab
+--- /dev/null
++++ b/HTML-LAB/images.html
+@@ -0,0 +1,17 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=0, initial-scale=1.0">
++    <title>Images</title>
++</head>
++<h2>My Profile</h2>
++<hr>
++<body>
++    <a href="index.html">
++        <img src="images/monke.jpg" alt="profile monkey pic" width="120" height="150">
++    </a>
++    <h3>Luke Joshua Dao-ines</h3>
++    <p> I am a BSIT student at UC, majoring in Web Tech.</p>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/images/monke.jpg b/HTML-LAB/images/monke.jpg
+new file mode 100644
+index 0000000..5486be6
+Binary files /dev/null and b/HTML-LAB/images/monke.jpg differ
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+new file mode 100644
+index 0000000..45859c8
+--- /dev/null
++++ b/HTML-LAB/index.html
+@@ -0,0 +1,41 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>
++        my first document
++    </title>
++</head>
++<h1>
++    <br>=============
++    <br> MY FIRST PAGE
++    <br>=============
++</h1>
++<hr>
++<h3>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++</h3>
++<hr>
++<h2>
++    Luke Joshua Dao-ines
++</h2>
++
++<body>
++    <p>
++        Bachelor of Science in Information Technology
++        <br>
++        <br> About Me
++        <br> ---------
++        <br> I am a student in web development
++        <br>
++        <br> My Hobbies
++        <br>----------
++        <br> I enjoy playing video games, listening to music and sports
++        <br>=========================
++    </p>
++    
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+new file mode 100644
+index 0000000..7b0deab
+--- /dev/null
++++ b/HTML-LAB/links.html
+@@ -0,0 +1,31 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Links</title>
++</head>
++<h1>
++    Links
++    <hr>
++</h1>
++<h3>
++    
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a> |
++    
++</h3>
++<hr>
++<body>
++
++    <p>
++    <a href="google.com">Google</a><br>
++    <a href="youtube.com">Youtube</a><br>
++    <a href="www.uc-bcf.edu.ph/">UC</a>
++
++
++    </p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+new file mode 100644
+index 0000000..5e4a134
+--- /dev/null
++++ b/HTML-LAB/lists.html
+@@ -0,0 +1,48 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>LISTS</title>
++</head>
++<h1> lists</h1>
++<hr>
++<body>
++    <p>
++        <h2>Favorite Foods</h2>
++        <ul>
++            <li>Burger</li>
++            <li>Pizza</li>
++            <li>Pinikpikan</li>
++            <li>Sisig</li>
++            <li>Dinakdakan</li>
++        </ul>
++        <h2>Top 5 Programming Languages</h2>
++        <ol>
++            <li>JavaScript</li>
++            <li>Python</li>
++            <li>Java</li>
++            <li>PHP</li>
++            <li>C#</li>
++        </ol>
++        <ul>
++            <h2>Computer Science</h2>
++            <li>Programming
++                <ol>
++                    <li>Java</li>
++                    <li>Python</li>
++                    <li>PHP</li>
++                </ol>
++            </li>
++            <li>Web Development
++                <ol>
++                    <li>HTMLK</li>
++                    <li>CSS</li>
++                    <li>JavaScript</li>
++                </ol>
++            </li>
++        </ul>
++    </p>
++    
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+new file mode 100644
+index 0000000..621459b
+--- /dev/null
++++ b/HTML-LAB/schedule.html
+@@ -0,0 +1,26 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML Tables</title>
++</head>
++<body>
++    <table>
++        <tr>
++            <th>Day</th>
++            <th>Time</th>
++            <th>Subject</th>
++            <th>Room</th>
++            <th>Instructor</th>
++        </tr>
++        <tr>
++            <td>Monday</td>
++            <td>8:50 AM</td>
++            <td>Web Development</td>
++            <td>m307</td>
++        </tr>
++    </table>
++    
++</body>
++</html>
+\ No newline at end of file
